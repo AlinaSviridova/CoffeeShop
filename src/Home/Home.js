@@ -15,7 +15,7 @@ const Home = (props) => {
     return (
         <> 
             <Container maxWidth={false} sx={{ p:0, backgroundImage: `url(${banner})` }} className="home-cover">
-                <Box sx={{ color: '#fff', height: 'auto', paddingTop: '22vh', }}>
+                <Box sx={{ color: '#fff', height: 'auto', paddingTop: '22vh'}}>
                     <Typography variant="h2">{title}</Typography>  
                     <img src={beansLine}  alt="beansLine" /> 
                     <Typography variant="h4" dangerouslySetInnerHTML={{__html: `${subtitle}`}}></Typography> 
@@ -28,7 +28,7 @@ const Home = (props) => {
                 <Typography dangerouslySetInnerHTML={{__html: `${maintext.text}`}}></Typography>
             </Container>
             <Container maxWidth={false} sx={{ p:0, backgroundImage: `url(${pinkBackground})` }} className="home-cover">
-                <Box sx={{ height: 'auto', paddingTop: '12vh', }}>
+                <Box sx={{ height: 'auto', paddingTop: '12vh', paddingBottom: '12vh' }}>
                     <Typography variant="h2">Our best</Typography> 
                     <CardList products={filtered} />
                 </Box> 
